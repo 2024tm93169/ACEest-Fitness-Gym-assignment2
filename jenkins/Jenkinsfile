@@ -3,7 +3,7 @@ pipeline {
 
   environment {
     DOCKERHUB_CREDENTIALS = credentials('dockerhub-creds')   // set this in Jenkins
-    DOCKERHUB_REPO = '2024tm93169/ACEest-Fitness-Gym-assignment2'
+    DOCKERHUB_REPO = '2024tm93169/aceest-fitness-gym'
     SONARQUBE_SERVER = 'My SonarQube Server'                 // configure in Jenkins
   }
 
@@ -62,7 +62,7 @@ pipeline {
       steps {
         script {
           def versions = [
-            ["1.0","app/ACEest_Fitness.py"],
+            ["1","app/ACEest_Fitness.py"],
             ["1.1","app/ACEest_Fitness-V1.1.py"],
             ["1.2","app/ACEest_Fitness-V1.2.py"],
             ["1.2.1","app/ACEest_Fitness-V1.2.1.py"],
